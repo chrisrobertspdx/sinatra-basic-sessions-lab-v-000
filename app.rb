@@ -5,14 +5,14 @@ class App < Sinatra::Base
   configure do
     enable :sessions
     set :session_secret, "hegelian"
-  end 
+  end
 
   get "/" do
     erb :index
   end
 
   post "/checkout" do
-    <%= session %>
+    session
   end
-  
+
 end
