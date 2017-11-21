@@ -1,0 +1,2 @@
+<h1>Item Purchased</h1>
+<%= @session["item"] %>
